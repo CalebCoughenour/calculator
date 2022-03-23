@@ -1,6 +1,8 @@
 .btn {
   background-color: blue;
   color: green;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h1 {
