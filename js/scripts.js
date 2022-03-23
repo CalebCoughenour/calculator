@@ -32,8 +32,20 @@ $(document).ready(function() {
 		$("#subOutput").text(result);
 	});
 
+	$("form#multiply").submit(function(event) {
+		event.preventDefault();
+		const number1 = parseInt($("#multiply1").val());
+		const number2 = parseInt($("#multiply2").val());
+		const result = multiply(number1, number2);
+		$("#multiplyOutput").text(result);
+	});
 
+	$("form#division").submit(function(event) {
+		event.preventDefault();
+		const number1 = parseInt($("#divide1").val());
+		const number2 = parseInt($("#divide2").val());
+		const result = divide(number1, number2);
+		$("#divisionOutput").text(result);
+	});
 
-
-	
 });
